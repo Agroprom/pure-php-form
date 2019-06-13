@@ -1,0 +1,29 @@
+
+/* 
+    Author     : agroprom
+*/
+
+form {
+    width: 30%;
+    min-width: 400px;
+}
+
+input {
+    min-width: 300px;
+    margin: auto;
+    
+}
+
+button {
+    min-width: 100px;
+}
+
+#container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.avatar {
+    max-width: 300px;
+    max-height: 400px;
+}
