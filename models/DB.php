@@ -2,7 +2,11 @@
 
 namespace app\models;
 
-
+/**
+ * 
+ * Синглетон для подключения к БД
+ * @author agroprom
+ */
 
 class DB {
     
@@ -13,7 +17,13 @@ class DB {
         
     private static $_dbCon;
     
-    
+    /**
+     * 
+     * @param string $host
+     * @param string $name
+     * @param string $user
+     * @param string $password
+     */
     private function __construct($host, $name, $user, $password)
     {
         try {
@@ -26,10 +36,10 @@ class DB {
 
     /**
      * 
-     * @param type $host
-     * @param type $name
-     * @param type $user
-     * @param type $password
+     * @param string $host
+     * @param string $name
+     * @param string $user
+     * @param string $password
      * @return PDO
      */
    public static function connect($host, $name, $user, $password)
