@@ -5,13 +5,9 @@ require_once '../models/DB.php';
 require_once '../models/DBHandler.php';
 require_once '../models/Helper.php';
 require_once '../Config.php';
-
 use app\models\Translator;
 use app\models\Helper;
-
-
 Translator::setLang(Translator::RU);
-
 ?>
 <html>
     <head>

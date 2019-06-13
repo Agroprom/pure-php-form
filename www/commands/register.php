@@ -14,7 +14,7 @@ use app\models\DBHandler;
 
 $uploadfile = '';
 
-if(getimagesize($_FILES['avatar']['tmp_name']) && $_FILES['avatar']['size'] <= Helper::MAX_IMAGE_SIZE) {    
+if(!empty($_FILES['avatar']['tmp_name']) && getimagesize($_FILES['avatar']['tmp_name']) && $_FILES['avatar']['size'] <= Helper::MAX_IMAGE_SIZE) {    
     
 $uploadfile = Helper::UPLOAD_DIR.time().'_'.basename($_FILES['avatar']['name']);
 copy($_FILES['avatar']['tmp_name'], $uploadfile);
